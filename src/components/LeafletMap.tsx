@@ -63,7 +63,7 @@ function MinimapControl({ zoom }: { zoom?: number }) {
         scrollWheelZoom={false}
         attributionControl={false}
         zoomControl={false}
-        className="h-20 sm:h-32 w-24 sm:w-40"
+        className="h-20 mobile-lg:h-32 w-24 mobile-lg:w-40"
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <MinimapBounds parentMap={parentMap} zoom={mapZoom} />
@@ -113,7 +113,7 @@ function LeafletMap() {
       zoom={coords ? 13 : 5}
       minZoom={3}
       zoomControl={false}
-      className="min-h-[300px] h-full w-full z-0 !bg-zinc-500"
+      className="min-h-[200px] h-full w-full z-0 !bg-zinc-500"
     >
       <p className="absolute bottom-5 z-50 text-red-500">{coords}</p>
       <TileLayer

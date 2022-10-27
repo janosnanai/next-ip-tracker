@@ -14,9 +14,9 @@ function SearchResult({
     <>
       <button
         onClick={onNewSearch}
-        className="m-3 p-2 rounded-lg flex align-middle uppercase text-base sm:text-lg text-violet-700 dark:text-amber-500 hover:text-violet-800 dark:hover:text-amber-400 hover:bg-violet-500/25 transition-colors outline-none focus:ring-2 focus:ring-violet-500/50 dark:focus:ring-white/50"
+        className="m-3 p-2 rounded-lg flex align-middle uppercase text-base mobile-lg:text-lg text-violet-700 dark:text-amber-500 hover:text-violet-800 dark:hover:text-amber-400 hover:bg-violet-500/25 transition-colors outline-none focus:ring-2 focus:ring-violet-500/50 dark:focus:ring-white/50"
       >
-        <ArrowLeftIcon className="my-auto h-4 sm:h-5 w-4 sm:w-5 mr-1" />
+        <ArrowLeftIcon className="my-auto h-4 mobile-lg:h-5 w-4 mobile-lg:w-5 mr-1" />
         <span>new search</span>
       </button>
       <div>
@@ -87,11 +87,11 @@ function ListElement({
         <div className="m-2 h-[1px] rounded-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
       )}
       <li className="flex items-center my-1">
-        <p className="w-16 sm:w-28 px-0.5 sm:px-2 uppercase text-[10px] sm:text-xs text-zinc-800 dark:text-zinc-400">
+        <p className="w-16 mobile-lg:w-28 px-0.5 mobile-lg:px-2 uppercase text-[10px] mobile-lg:text-xs text-zinc-800 dark:text-zinc-400">
           {title}
         </p>
-        <div className="w-40 sm:w-60 flex justify-between items-center">
-          <p className="whitespace-normal text-sm sm:text-base sm:tracking-wide text-zinc-900 dark:text-zinc-300">
+        <div className="w-40 mobile-lg:w-60 flex justify-between items-center">
+          <p className="whitespace-normal text-sm mobile-lg:text-base mobile-lg:tracking-wide text-zinc-900 dark:text-zinc-300">
             {content}
           </p>
           {img && <img src={img} className="h-4 w-8" />}

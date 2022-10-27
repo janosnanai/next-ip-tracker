@@ -18,14 +18,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className="flex flex-col h-screen">
-        <header className="h-11 px-2 sm:px-7 flex justify-between items-center bg-violet-50 dark:bg-zinc-900 bg-gradient-to-br from-transparent to-indigo-800/30 border-b border-violet-500">
-          <h1 className="font-semibold uppercase text-lg sm:text-2xl bg-gradient-to-r from-violet-700 dark:from-violet-500 dark:to-amber-500 to-sky-700 bg-clip-text text-transparent text-center">
+        <header className="h-11 px-2 mobile-lg:px-7 flex justify-between items-center bg-violet-50 dark:bg-zinc-900 bg-gradient-to-br from-transparent to-indigo-800/30 border-b border-violet-500">
+          <h1 className="font-semibold uppercase text-lg mobile-lg:text-2xl bg-gradient-to-r from-violet-700 dark:from-violet-500 dark:to-amber-500 to-sky-700 bg-clip-text text-transparent text-center">
             ip address tracker
           </h1>
           <DarkSwitch />
         </header>
         <main className="grow h-full">
-          <div className="absolute top-12 sm:top-16 left-2 sm:left-5 z-10 w-64 sm:w-96">
+          <div className="absolute top-12 sm:top-16 left-2 sm:left-5 z-10 w-64 mobile-lg:w-96">
             <SearchWidget />
           </div>
           {typeof window !== "undefined" && <LeafletMap />}
